@@ -32,7 +32,7 @@ import kotlin.reflect.KMutableProperty0
 class OptionsPopup(
     screen: BaseScreen,
     private val selectPage: Int = defaultPage,
-    withDebug: Boolean = false,
+    withDebug: Boolean = true,
     private val onClose: () -> Unit = {}
 ) : Popup(screen.stage, /** [TabbedPager] handles scrolling */ scrollable = Scrollability.None) {
 
