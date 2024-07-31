@@ -8,6 +8,7 @@ on:
     # Once when deploying a version is a good compromise.
     tags:
       - '*'
+  workflow_dispatch:
 
 jobs:
 
