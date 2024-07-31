@@ -123,7 +123,7 @@ class OptionsPopup(
             val content = ModCheckTab(screen)
             tabs.addPage("Locate mod errors", content, ImageGetter.getImage("OtherIcons/Mods"), 24f)
         }
-        if (withDebug || Gdx.input.areSecretKeysPressed()) {
+        if (withDebug) {
             tabs.addPage("Debug", debugTab(this), ImageGetter.getImage("OtherIcons/SecretOptions"), 24f)
         }
 
